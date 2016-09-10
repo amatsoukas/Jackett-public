@@ -86,9 +86,11 @@ These instructions are to compile on a windows host
 * Open a new cmd prompt, cd into git Jackett repo folder
 
 * run `Build-mono.bat`
-	* This generates some product files, including Output/setup.exe, and 'build.mono' folder
+	* This generates some product files, including a folder named 'Jackett.Binaries.Mono'
 
-* Rename 'build.mono' folder --> 'Jackett-public'
+* Rename the folder 'Jackett.Binaries.Mono' --> 'Jackett-public.Binaries.Mono'
+
+* Open that new folder and rename it's subfolder 'Jackett' --> 'Jackett-public'
 
 * Right click in explorer --> Zip --> 'Add to archive'
 	* Select 'tar' archive format
