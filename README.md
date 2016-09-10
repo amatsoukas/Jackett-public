@@ -88,11 +88,9 @@ These instructions are to compile on a windows host
 * run `Build-mono.bat`
 	* This generates some product files, including a folder named 'Jackett.Binaries.Mono'
 
-* Rename the folder 'Jackett.Binaries.Mono' --> 'Jackett-public.Binaries.Mono'
+* Rename the SUB folder 'Jackett' --> 'Jackett-public.Binaries.Mono'
 
-* Open that new folder and rename it's subfolder 'Jackett' --> 'Jackett-public'
-
-* Right click in explorer --> Zip --> 'Add to archive'
+* Right click it in explorer --> Zip --> 'Add to archive'
 	* Select 'tar' archive format
 	* Name: 'Jackett-public.Binaries.Mono.tar'
 
