@@ -27,8 +27,7 @@ namespace Jackett.Indexers
             get { return new Uri(configData.Url.Value); }
             set { configData.Url.Value = value.ToString(); }
         }
-
-        private string SearchUrl { get { return BaseUri + "verified?f={0}"; } }
+        private string SearchUrl { get { return BaseUri + "verifiedP?f={0}"; } }
 
         new ConfigurationDataUrl configData
         {
