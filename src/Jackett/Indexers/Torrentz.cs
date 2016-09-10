@@ -20,7 +20,7 @@ namespace Jackett.Indexers
 {
     public class Torrentz : BaseIndexer, IIndexer
     {
-        readonly static string defaultSiteLink = "https://torrentz.eu/";
+        readonly static string defaultSiteLink = "https://torrentz2.eu/";
 
         private Uri BaseUri
         {
@@ -28,7 +28,7 @@ namespace Jackett.Indexers
             set { configData.Url.Value = value.ToString(); }
         }
 
-        private string SearchUrl { get { return BaseUri + "feed_verifiedP?f={0}"; } }
+        private string SearchUrl { get { return BaseUri + "verified?f={0}"; } }
 
         new ConfigurationDataUrl configData
         {
